@@ -13,11 +13,11 @@ This dataset contains 94 movie summary videos from various YouTube channels. You
 
 `YMS/url_list.txt` - the list of video URLs with the corresponding numbering
 
-`YMS/annotations_sentences.txt` - annotation of the narrator sentences
-
-`YMS/annotations_phrases.txt` - annotation of the narrator phrases (if available)
+`YMS/annotations_phrases.txt` - annotation of the narrator phrases **( Ground Truth Matched Pairs )**
 
 `YMS/clip_segmentation.txt` - list of over-segmented clips that we used in our experiments
+
+`YMS/*_split.txt` - training / validation / testing split for YMS Dataset
 
 In the annotation files, the video parts with "UNMATCHED" annotation represent the clips that do not have any corresponding narrator phrase/sentence. If a video part has an annotation sentence/phrase which starts with "UNMATCHED:", that clip and the phrase/sentence do not have correspondances in the other medium. 
 
